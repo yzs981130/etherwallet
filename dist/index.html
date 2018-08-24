@@ -70,7 +70,7 @@
     </span>
 
     <!-- Warning: The separators you see on the frontend are in styles/etherwallet-custom.less. If you add / change a node, you have to adjust these. Ping tayvano if you're not a CSS wizard -->
-    <span class="dropdown dropdown-node" ng-cloak>
+    <span class="dropdown dropdown-node" ng-cloak style="display: none">
       <a tabindex="0"
          aria-haspopup="true"
          aria-label="change node. current node {{curNode.name}} node by {{curNode.service}}"
@@ -263,20 +263,20 @@
          aria-describedby="x_PrintDesc"
          role="button"
          class="btn btn-primary"
-         ng-click="printQRCode()"
+         
          translate="x_Print">
           PRINT
       </a>
 
       <div class="warn">
         <p>
-          **Do not lose it!** It cannot be recovered if you lose it.
+          务必将私钥妥善保存。 Please save your privatekey.
         </p>
         <p>
-          **Do not share it!** Your funds will be stolen if you use this file on a malicious/phishing site.
+          此页面仅会显示一次。 This page shall be shown only once.
         </p>
         <p>
-          **Make a backup!** Secure it like the millions of dollars it may one day be worth.
+          点击下方按钮查看你的地址，持有私钥或者keystore就可以解锁账户。 Click for your address.
         </p>
       </div>
 
@@ -288,42 +288,7 @@
 
     </section>
 
-    <section class="block__help">
-      <h2 translate="GEN_Help_4">
-        Guides &amp; FAQ
-      </h2>
-      <ul>
-        <li><a href="https://myetherwallet.github.io/knowledge-base/getting-started/backing-up-your-new-wallet.html" target="_blank" rel="noopener noreferrer">
-          <strong translate="HELP_2a_Title">
-            How to Save & Backup Your Wallet.
-          </strong>
-        </a></li>
-        <li><a href="https://myetherwallet.github.io/knowledge-base/getting-started/protecting-yourself-and-your-funds.html" target="_blank" rel="noopener noreferrer">
-          <strong translate="GEN_Help_15">Preventing loss &amp; theft of your funds.</strong>
-        </a></li>
-        <li><a href="https://myetherwallet.github.io/knowledge-base/private-keys-passwords/difference-beween-private-key-and-keystore-file.html" target="_blank" rel="noopener noreferrer">
-          <strong translate="GEN_Help_16">What are these Different Formats?</strong>
-        </a></li>
-      </ul>
 
-      <h2 translate="GEN_Help_17">
-        Why Should I?
-      </h2>
-      <ul>
-        <li translate="GEN_Help_18">
-          To have a secondary backup.
-        </li>
-        <li translate="GEN_Help_19">
-          In case you ever forget your password.
-        </li>
-        <li>
-          <a href="https://myetherwallet.github.io/knowledge-base/offline/ethereum-cold-storage-with-myetherwallet.html" target="_blank" rel="noopener noreferrer" translate="GEN_Help_20">Cold Storage</a>
-        </li>
-      </ul>
-
-      <h2 translate="x_PrintDesc"></h2>
-
-    </section>
 
   </article>
 
